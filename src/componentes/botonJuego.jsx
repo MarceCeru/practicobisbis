@@ -1,7 +1,7 @@
 import React from "react";
-//import rock from "./rock.png";
-//import paper from './paper.png';
-//import scissors from './scissors.png';
+import rock from "./rock.png";
+import paper from './paper.png';
+import scissors from './scissors.png';
 //import { type } from "@testing-library/user-event/dist/type";
 
 
@@ -40,9 +40,11 @@ function hacerRonda () {
 }
 return (
     <div >
-        <button className="botones" onClick={hacerRonda}>{type}</button>
+    <button className="botones" onClick={hacerRonda}><img src={rock} width={200} height={200} alt=""  />{type="piedra"}</button>
+    <button className="botones" onClick={hacerRonda}><img src={paper} width='200px' height='200px' alt="" />{type="papel"}</button>
+    <button className="botones" onClick={hacerRonda}><img src={scissors} width='200px' height='200px' alt="" />{ type="tijera"}</button>
     </div>
-);
+); 
     }
 
 

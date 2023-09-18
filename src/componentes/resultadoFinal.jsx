@@ -1,10 +1,10 @@
 import React from "react";
 
 
-const ResutadoFinal = () => {
+const ResutadoFinal = ({ganador}) => {
     return(
         <>
-           <p> Resultado final:  </p>
+           <p> Resultado final: {ganador}</p>
         </>
 
     );

@@ -25,7 +25,7 @@ const HandleNombreChange = (event) => {
 
 const [validarName, setValidarName] = useState('');
 const [contadores, setContadores] = useState({ usuario: 0, computadora: 0});
-
+const [ganador, setGanador] = useState('');
 
 
     return (
@@ -49,7 +49,7 @@ const [contadores, setContadores] = useState({ usuario: 0, computadora: 0});
       </div>
 
       <div >
-        <Juego contadores={contadores} setContadores={setContadores}/>
+        <Juego contadores={contadores} setContadores={setContadores} ganador={ganador} setGanador={setGanador}/>
       </div>
      
 
@@ -59,7 +59,7 @@ const [contadores, setContadores] = useState({ usuario: 0, computadora: 0});
       </div>
 
       <div className='resultadoFinal'>
-         <ResutadoFinal/>
+         <ResutadoFinal ganador={ganador} setGanador={setGanador}/>
       </div>
 
      

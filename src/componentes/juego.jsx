@@ -3,13 +3,12 @@ import { useState, useEffect } from "react";
 import BotonJugada from "./botonJuego"
 
 
-export default function Juego ({contadores, setContadores}) {
-    const [ganador, setGanador] = useState('');
+export default function Juego ({contadores, setContadores, ganador, setGanador}) {
     function determinarGanador(){
         if(contadores.usuario ===3){
-            setGanador('usuario');
+            setGanador('Gana el usuario');
         }else if(contadores.computadora ===3){
-            setGanador('computadora');
+            setGanador('Gana la computadora');
         }
     }
 
@@ -17,9 +16,8 @@ export default function Juego ({contadores, setContadores}) {
 
     return(
         <div >
-            <BotonJugada type='piedra' setContadores={setContadores} contadores={contadores}/>
-            <BotonJugada type='papel' setContadores={setContadores} contadores={contadores}/>
-            <BotonJugada type='tijera' setContadores={setContadores} contadores={contadores}/>
+            <BotonJugada setContadores={setContadores} contadores={contadores}/>
+         
         </div>
 
     )
