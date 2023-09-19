@@ -8,6 +8,7 @@ import ResultadosParciales from './componentes/resultadosParciales';
 import ResutadoFinal from './componentes/resultadoFinal';
 //import BotonJugada from './componentes/botonJuego';
 import Juego from './componentes/juego';
+import Reinicio from './componentes/botonReinicio';
 
 
 
@@ -60,6 +61,10 @@ const [ganador, setGanador] = useState('');
 
       <div className='resultadoFinal'>
          <ResutadoFinal ganador={ganador} setGanador={setGanador}/>
+      </div>
+
+      <div>
+        <Reinicio contadores={contadores} setContadores={setContadores}/>
       </div>
 
      
