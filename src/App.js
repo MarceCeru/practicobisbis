@@ -6,7 +6,6 @@ import MostrarSaludos from './componentes/MostrarSaludos';
 import BotonInicioReinicio from './componentes/botonInicioReinicio';
 import ResultadosParciales from './componentes/resultadosParciales';
 import ResutadoFinal from './componentes/resultadoFinal';
-//import BotonJugada from './componentes/botonJuego';
 import Juego from './componentes/juego';
 import Reinicio from './componentes/botonReinicio';
 
@@ -27,6 +26,7 @@ const HandleNombreChange = (event) => {
 const [validarName, setValidarName] = useState('');
 const [contadores, setContadores] = useState({ usuario: 0, computadora: 0});
 const [ganador, setGanador] = useState('');
+const [desabilitar, setDesabilitar] = useState(false);
 
 
     return (
@@ -42,15 +42,15 @@ const [ganador, setGanador] = useState('');
       </div>
 
       <div >
-        <BotonInicioReinicio validarName={validarName} setValidarName={setValidarName}  nombre={nombre}/>
+        <BotonInicioReinicio validarName={validarName} setValidarName={setValidarName}  nombre={nombre} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
       </div>
 
       <div className='saludo'>
-        <MostrarSaludos validarName={validarName} nombre={nombre}/>
+        <MostrarSaludos validarName={validarName} nombre={nombre} contadores={contadores}/>
       </div>
 
       <div >
-        <Juego contadores={contadores} setContadores={setContadores} ganador={ganador} setGanador={setGanador}/>
+        <Juego contadores={contadores} setContadores={setContadores} ganador={ganador} setGanador={setGanador} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
       </div>
      
 
@@ -64,7 +64,7 @@ const [ganador, setGanador] = useState('');
       </div>
 
       <div>
-        <Reinicio contadores={contadores} setContadores={setContadores}/>
+        <Reinicio contadores={contadores} setContadores={setContadores} setGanador={setGanador} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
       </div>
 
      

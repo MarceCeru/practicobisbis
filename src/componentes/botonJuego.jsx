@@ -26,7 +26,7 @@ if (opcionUsuario === opcionCompu){
     }
 
 
- export default function  BotonJugada ({type, contadores, setContadores}) {
+ export default function  BotonJugada ({type, contadores, setContadores, desabilitar, setDesabilitar}) {
 function hacerRonda () {
     let opcionUsuario = type;
     let opcionCompu = obtenerOpcComlpu();
@@ -40,9 +40,9 @@ function hacerRonda () {
 }
 return (
     <div >
-    <button className="botones" onClick={hacerRonda}><img src={rock} width={200} height={200} alt=""  />{type="piedra"}</button>
-    <button className="botones" onClick={hacerRonda}><img src={paper} width='200px' height='200px' alt="" />{type="papel"}</button>
-    <button className="botones" onClick={hacerRonda}><img src={scissors} width='200px' height='200px' alt="" />{ type="tijera"}</button>
+    <button className="botones" onClick={hacerRonda} disabled= {!desabilitar} ><img src={rock} width={200} height={200} alt=""  />{type="piedra"}</button>
+    <button className="botones" onClick={hacerRonda} disabled= {!desabilitar}><img src={paper} width='200px' height='200px' alt="" />{type="papel"}</button>
+    <button className="botones" onClick={hacerRonda} disabled= {!desabilitar}><img src={scissors} width='200px' height='200px' alt="" />{ type="tijera"}</button>
     </div>
 ); 
     }

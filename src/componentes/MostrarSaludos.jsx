@@ -1,13 +1,28 @@
 import React from "react";
 
-const MostrarSaludos = ({nombre, validarName}) => {
+const MostrarSaludos = ({nombre, validarName, contadores}) => {
+  function hola (){
+    if (contadores.usuario===0 && contadores.computadora===0 ) {
+      
+      return(
+        <>
+          Hola, {nombre} esta es una partida al mejor de 5. Elije un opcion.
+        </>
+      )
+   
+    }else{
+      return(
+        <>
+          Elije nuevamente.
+        </>
+      )
+    }
+  }
 
   if(validarName===true){
 
     return(
-      <>
-      Hola, {nombre}. Esta sera un partida al mejor de 5. Elige una opcion!.
-      </>
+     hola()
     )
   }
 
