@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/practicobisbis/static/css/main.3803aa00.css",
-    "main.js": "/practicobisbis/static/js/main.eec4c556.js",
+    "main.css": "/practicobisbis/static/css/main.7d02b0de.css",
+    "main.js": "/practicobisbis/static/js/main.a2308a5a.js",
     "static/js/787.6229958e.chunk.js": "/practicobisbis/static/js/787.6229958e.chunk.js",
     "static/media/scissors.png": "/practicobisbis/static/media/scissors.681a609442a89fb3848d.png",
     "static/media/paper.png": "/practicobisbis/static/media/paper.5cf50220525a79e33370.png",
     "static/media/rock.png": "/practicobisbis/static/media/rock.89802bea7c3cf6b4cbb8.png",
     "index.html": "/practicobisbis/index.html",
-    "main.3803aa00.css.map": "/practicobisbis/static/css/main.3803aa00.css.map",
-    "main.eec4c556.js.map": "/practicobisbis/static/js/main.eec4c556.js.map",
+    "main.7d02b0de.css.map": "/practicobisbis/static/css/main.7d02b0de.css.map",
+    "main.a2308a5a.js.map": "/practicobisbis/static/js/main.a2308a5a.js.map",
     "787.6229958e.chunk.js.map": "/practicobisbis/static/js/787.6229958e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3803aa00.css",
-    "static/js/main.eec4c556.js"
+    "static/css/main.7d02b0de.css",
+    "static/js/main.a2308a5a.js"
   ]
 }
