@@ -6,16 +6,22 @@ const MostrarSaludos = ({nombre, validarName, contadores}) => {
       
       return(
         <>
-          Hola, {nombre} esta es una partida al mejor de 5. Elije un opcion.
+          Hola, {nombre}. Esta es una partida al mejor de 5. Elije un opcion.
         </>
       )
    
-    }else{
+    }else if(contadores.usuario===3 || contadores.computadora===3){
       return(
         <>
-          Elije nuevamente.
+          
         </>
       )
+    }else{
+    return(
+      <>
+        Elije nuevamente.
+      </>
+    )
     }
   }
 

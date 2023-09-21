@@ -5,8 +5,7 @@ export default function ResultadosParciales ({ contadores }) {
     
         return(
            <>
-            <p>Usuario: {contadores.usuario}</p>
-            <p>Computadora: {contadores.computadora}</p>
+            <p>Usuario: {contadores.usuario} ,         Computadora: {contadores.computadora}</p>
             </>
         );
     

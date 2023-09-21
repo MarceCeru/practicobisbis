@@ -8,8 +8,9 @@ function Saludar (){
   if(nombre===""){
     alert('Debe ingresar su nombre');
   }else{
+
     setValidarName(true);
-    setDesabilitar(true);
+    setDesabilitar (true);
     
   }
     }

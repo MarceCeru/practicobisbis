@@ -37,16 +37,13 @@ const [desabilitar, setDesabilitar] = useState(false);
       <h1>PIEDRA PAPEL TIJERA</h1>
       </div>
 
-      <div>
+       <div id='comienzo'>
       < IngresoNombre nombre={nombre} onNombreChange={HandleNombreChange}/>
-      </div>
+       <BotonInicioReinicio validarName={validarName} setValidarName={setValidarName}  nombre={nombre} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
+         </div>
 
-      <div >
-        <BotonInicioReinicio validarName={validarName} setValidarName={setValidarName}  nombre={nombre} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
-      </div>
-
-      <div className='saludo'>
-        <MostrarSaludos validarName={validarName} nombre={nombre} contadores={contadores}/>
+       <div className='saludo'>  
+         <MostrarSaludos validarName={validarName} nombre={nombre} contadores={contadores}/>
       </div>
 
       <div >
@@ -59,11 +56,8 @@ const [desabilitar, setDesabilitar] = useState(false);
       
       </div>
 
-      <div className='resultadoFinal'>
+      <div id='resultadoFinal'>
          <ResutadoFinal ganador={ganador} setGanador={setGanador}/>
-      </div>
-
-      <div>
         <Reinicio contadores={contadores} setContadores={setContadores} setGanador={setGanador} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
       </div>
 
