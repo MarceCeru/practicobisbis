@@ -26,7 +26,7 @@ if (opcionUsuario === opcionCompu){
     }
 
 
- export default function  BotonJugada ({type, contadores, setContadores, desabilitar, setDesabilitar}) {
+ export default function  BotonJugada ({type, contadores, setContadores, desabilitar, setDesabilitar, }) {
 function hacerRonda () {
     let opcionUsuario = type;
     let opcionCompu = obtenerOpcComlpu();

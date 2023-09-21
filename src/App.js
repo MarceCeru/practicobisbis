@@ -21,12 +21,13 @@ const HandleNombreChange = (event) => {
 };
 
 
-//const [saludo, setSaludo] = useState('');
+
 
 const [validarName, setValidarName] = useState('');
 const [contadores, setContadores] = useState({ usuario: 0, computadora: 0});
 const [ganador, setGanador] = useState('');
 const [desabilitar, setDesabilitar] = useState(false);
+
 
 
     return (
@@ -39,7 +40,8 @@ const [desabilitar, setDesabilitar] = useState(false);
 
        <div id='comienzo'>
       < IngresoNombre nombre={nombre} onNombreChange={HandleNombreChange}/>
-       <BotonInicioReinicio validarName={validarName} setValidarName={setValidarName}  nombre={nombre} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
+      <br/>
+       <BotonInicioReinicio validarName={validarName} setValidarName={setValidarName} ganador={ganador} setGanador={setGanador}  nombre={nombre} desabilitar={desabilitar} setDesabilitar={setDesabilitar} contadores={contadores} setContadores={setContadores}/>
          </div>
 
        <div className='saludo'>  

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: orange;
+  background-color: lightgrey;
 }
 
 .titulo {
@@ -43,7 +43,7 @@ width: 100%;
   position: relative;
   top: 50px;
   font-size: 24px;
-  background-color: yellow;
+  background-color:lightgoldenrodyellow;
 }
 
 .jugar{
@@ -52,7 +52,7 @@ margin: 5px;
 }
 
 #Inicio{
-  background-color: yellow;
+  background-color:lightgoldenrodyellow;
   font-size: 24px;
   font-weight: bold;
   padding: 16px 16px;
@@ -71,7 +71,6 @@ margin: 5px;
 }
 
 #reinicio{
-  background-color: lightgray;
   font-size: 24px;
   font-weight: bold;
   padding: 16px 16px;
@@ -79,11 +78,10 @@ margin: 5px;
   position: relative;
   text-align: center;
   border-radius: 10px;
-  background-color: yellow;
+  background-color: lightgoldenrodyellow;
 }
 
 #IngresoNombre{
-  background-color: lightgray;
   font-size: 24px;
   font-weight: bold;
   padding: 16px 16px;
@@ -91,7 +89,7 @@ margin: 5px;
   position: relative;
   text-align: center;
   border-radius: 10px;
-  background-color: yellow;
+  background-color: lightgoldenrodyellow;
 
 }
 
