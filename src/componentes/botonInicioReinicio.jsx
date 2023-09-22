@@ -18,7 +18,7 @@ function Saludar ( ){
 
 return(
     <div >
-       <button onClick={Saludar}  id="Inicio">Iniciar</button>
+       <button onClick={Saludar}  id="Inicio">Iniciar/Reiniciar</button>
     </div>
 );
 }

@@ -7,7 +7,6 @@ import BotonInicioReinicio from './componentes/botonInicioReinicio';
 import ResultadosParciales from './componentes/resultadosParciales';
 import ResutadoFinal from './componentes/resultadoFinal';
 import Juego from './componentes/juego';
-import Reinicio from './componentes/botonReinicio';
 
 
 
@@ -60,7 +59,6 @@ const [desabilitar, setDesabilitar] = useState(false);
 
       <div id='resultadoFinal'>
          <ResutadoFinal ganador={ganador} setGanador={setGanador}/>
-        <Reinicio contadores={contadores} setContadores={setContadores} setGanador={setGanador} desabilitar={desabilitar} setDesabilitar={setDesabilitar}/>
       </div>
 
      
